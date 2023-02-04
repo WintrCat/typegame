@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>typegame</title>
+
+		<link rel="stylesheet" href="./index.css"/>
+	</head>
+
+	<body>
+		<div style="text-align: center; margin: 30px;">
+			<b><span id="title" class="mono">typegame</span></b>
+			<br>
+			<i class="mono" id="author"><span>by wisnlon</span></i>
+			<br>
+			<div id="key">
+				<b class="mono" style="font-size: 36px;"><span>F</span></b>
+			</div>
+			<br>
+			<b><span class="mono" id="presses">0 Presses</span></b>
+			<br>
+			<b><span class="mono" id="time">5.00 seconds left</span></b>
+
+			<br>
+			<div id="scoreArea" style="margin: 15px;">
+				<button id="restart">Try Again</button>
+				<br>
+				<b><span class="mono" id="score">Your score:</span></b>
+				<br>
+				<input id="username" type="text" placeholder="Username..."/>
+				<button id="submit">Submit</button>
+				<br><br>
+				<span id="submitMessage" class="mono">You submitted your score!</span>
+			</div>
+
+			<div id="leaderboardOuter">
+				<b><span class="mono" style="font-size: 28px;">Leaderboard</span></b>
+				<div id="leaderboard"></div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<b><span class="mono ignoreDarkMode">Dark Mode</span></b>
+			<input id="darkMode" type="checkbox"/>
+
+			<b><span class="mono ignoreDarkMode">Key</span></b>
+			<select id="pressingKey">
+				<option value="a">A</option>
+				<option value="b">B</option>
+				<option value="c">C</option>
+				<option value="d">D</option>
+				<option value="e">E</option>
+				<option selected value="f">F</option>
+				<option value="g">G</option>
+				<option value="h">H</option>
+				<option value="i">I</option>
+				<option value="j">J</option>
+				<option value="k">K</option>
+				<option value="l">L</option>
+				<option value="m">M</option>
+				<option value="n">N</option>
+				<option value="o">O</option>
+				<option value="p">P</option>
+				<option value="q">Q</option>
+				<option value="r">R</option>
+				<option value="s">S</option>
+				<option value="t">T</option>
+				<option value="u">U</option>
+				<option value="v">V</option>
+				<option value="w">W</option>
+				<option value="x">X</option>
+				<option value="y">Y</option>
+				<option value="z">Z</option>
+			</select>
+		</div>
+
+		<script src="./util.js"></script>
+		<script src="./index.js"></script>
+	</body>
+</html>
