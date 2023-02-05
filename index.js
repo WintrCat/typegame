@@ -37,6 +37,19 @@ server.get("/api/leaderboard", (req, res) => {
 	
 });
 
+let auth = readFileSync("./auth.txt", "utf-8");
+server.post("/api/update", (req, res) => {
+
+	if (req.body.auth != auth) {
+		res.status(400);
+		res.send("Authentication failed. You're probably not wintrcat bruh...");
+		return;
+	}
+	writeFileSync("./leaderboard.json", JSON.stringify(req.body.leaderboard));
+	res.send("thanks");
+
+});
+
 server.listen(8080, () => {
 	console.log("running");
 });
